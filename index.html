@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earnings Explorer - Comparison Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnings Explorer - Interactive Comparison Chart</h1>
+    </header>
+    <main>
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="filter">Filter by Investment:</label>
+            <select id="filter" onchange="filterTable()">
+                <option value="all">All</option>
+                <option value="low">Low Investment</option>
+                <option value="medium">Medium Investment</option>
+                <option value="none">No Investment</option>
+                <option value="high">High Investment</option>
+            </select>
+        </div>
+
+        <!-- Comparison Table -->
+        <table id="comparisonTable">
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th>Freelancing (Upwork)</th>
+                    <th>Content Creation (YouTube)</th>
+                    <th>Surveys (Swagbucks)</th>
+                    <th>Dropshipping</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-investment="low">
+                    <td class="tooltip">Initial Investment
+                        <span class="tooltiptext">The upfront cost required to get started.</span>
+                    </td>
+                    <td>Low</td>
+                    <td>Medium</td>
+                    <td>None</td>
+                    <td>High</td>
+                </tr>
+                <tr data-investment="high">
+                    <td class="tooltip">Earning Potential
+                        <span class="tooltiptext">The potential income you can earn.</span>
+                    </td>
+                    <td>High</td>
+                    <td>Very High</td>
+                    <td>Low</td>
+                    <td>High</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Bar Chart -->
+        <div class="chart">
+            <h2>Earning Potential Comparison</h2>
+            <div class="bar" style="width: 80%;">Freelancing (High)</div>
+            <div class="bar" style="width: 95%;">Content Creation (Very High)</div>
+            <div class="bar" style="width: 40%;">Surveys (Low)</div>
+            <div class="bar" style="width: 85%;">Dropshipping (High)</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

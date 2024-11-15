@@ -1,0 +1,110 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Filter Section */
+.filter-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-section select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead tr {
+    background: linear-gradient(45deg, #4CAF50, #45A049);
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Bar Chart Styles */
+.chart {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: right;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.bar:hover {
+    background-color: #45a049;
+}
